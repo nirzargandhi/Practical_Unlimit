@@ -1,19 +1,16 @@
 //
-//  ViewController.swift
+//  JokesVC.swift
 //  Practical_Unlimit
-//
-//  Created by Nirzar Gandhi on 30/09/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class JokesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-

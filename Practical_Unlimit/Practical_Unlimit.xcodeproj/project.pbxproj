@@ -33,6 +33,9 @@
 		E60BA1D82AC7E706002335E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1D72AC7E706002335E4 /* Constants.swift */; };
 		E60BA1DA2AC7E993002335E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60BA1D92AC7E993002335E4 /* Main.storyboard */; };
 		E60BA1E22AC7ED03002335E4 /* JokesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1E12AC7ED03002335E4 /* JokesVC.swift */; };
+		E64430A72AC7F62C00C0F73B /* JokesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64430A62AC7F62C00C0F73B /* JokesListModel.swift */; };
+		E64430A92AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64430A82AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift */; };
+		E6560D6B2AC7F13200204935 /* JokesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6560D6A2AC7F13200204935 /* JokesTVC.swift */; };
 		E696630E2AC7E53C000E3AC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696630D2AC7E53C000E3AC4 /* AppDelegate.swift */; };
 		E696631A2AC7E542000E3AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69663182AC7E542000E3AC4 /* LaunchScreen.storyboard */; };
 		E69663252AC7E543000E3AC4 /* Practical_UnlimitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69663242AC7E543000E3AC4 /* Practical_UnlimitTests.swift */; };
@@ -84,6 +87,9 @@
 		E60BA1D72AC7E706002335E4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E60BA1D92AC7E993002335E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E60BA1E12AC7ED03002335E4 /* JokesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesVC.swift; sourceTree = "<group>"; };
+		E64430A62AC7F62C00C0F73B /* JokesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListModel.swift; sourceTree = "<group>"; };
+		E64430A82AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokesVC+UITableViewDelegate+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		E6560D6A2AC7F13200204935 /* JokesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTVC.swift; sourceTree = "<group>"; };
 		E696630A2AC7E53C000E3AC4 /* Practical_Unlimit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical_Unlimit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E696630D2AC7E53C000E3AC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E69663192AC7E542000E3AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -267,7 +273,9 @@
 		E60BA1DD2AC7ECD5002335E4 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				E6560D692AC7F11F00204935 /* Cell */,
 				E60BA1DE2AC7ECDB002335E4 /* Controller */,
+				E64430A52AC7F61A00C0F73B /* Model */,
 			);
 			path = Jokes;
 			sourceTree = "<group>";
@@ -276,8 +284,25 @@
 			isa = PBXGroup;
 			children = (
 				E60BA1E12AC7ED03002335E4 /* JokesVC.swift */,
+				E64430A82AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E64430A52AC7F61A00C0F73B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E64430A62AC7F62C00C0F73B /* JokesListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6560D692AC7F11F00204935 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E6560D6A2AC7F13200204935 /* JokesTVC.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E69663012AC7E53C000E3AC4 = {
@@ -472,6 +497,9 @@
 			files = (
 				E60BA1D02AC7E6DA002335E4 /* UIViewController+Extension.swift in Sources */,
 				E60BA1CD2AC7E6DA002335E4 /* UIImageView+Extension.swift in Sources */,
+				E6560D6B2AC7F13200204935 /* JokesTVC.swift in Sources */,
+				E64430A92AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */,
+				E64430A72AC7F62C00C0F73B /* JokesListModel.swift in Sources */,
 				E60BA1CF2AC7E6DA002335E4 /* UIView+Extension.swift in Sources */,
 				E696630E2AC7E53C000E3AC4 /* AppDelegate.swift in Sources */,
 				E60BA1E22AC7ED03002335E4 /* JokesVC.swift in Sources */,

@@ -60,7 +60,7 @@ enum UserDefaultsKey {
 //MARK: - DateTime Format
 enum DateAndTimeFormatString {
 
-    static let strDateFormate_hhmma = "hh:mm a"
+    static let strDateFormat_MMMddYYYYhhmmssa = "MMM dd YYYY hh:mm:ss a"
 }
 
 //MARK: - Fonts

@@ -42,6 +42,8 @@
 		E69663252AC7E543000E3AC4 /* Practical_UnlimitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69663242AC7E543000E3AC4 /* Practical_UnlimitTests.swift */; };
 		E696632F2AC7E543000E3AC4 /* Practical_UnlimitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696632E2AC7E543000E3AC4 /* Practical_UnlimitUITests.swift */; };
 		E69663312AC7E543000E3AC4 /* Practical_UnlimitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69663302AC7E543000E3AC4 /* Practical_UnlimitUITestsLaunchTests.swift */; };
+		E6DB23A22AC82113003547C7 /* JokesDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E6DB23A12AC82113003547C7 /* JokesDB.sqlite */; };
+		E6DB23A42AC82291003547C7 /* JokesDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB23A32AC82291003547C7 /* JokesDBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		E696632A2AC7E543000E3AC4 /* Practical_UnlimitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Practical_UnlimitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E696632E2AC7E543000E3AC4 /* Practical_UnlimitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practical_UnlimitUITests.swift; sourceTree = "<group>"; };
 		E69663302AC7E543000E3AC4 /* Practical_UnlimitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practical_UnlimitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6DB23A12AC82113003547C7 /* JokesDB.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JokesDB.sqlite; sourceTree = "<group>"; };
+		E6DB23A32AC82291003547C7 /* JokesDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesDBManager.swift; sourceTree = "<group>"; };
 		F638C2214CE22BB22A87488B /* Pods-Practical_Unlimit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practical_Unlimit.release.xcconfig"; path = "Target Support Files/Pods-Practical_Unlimit/Pods-Practical_Unlimit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +141,6 @@
 				41DD1337423A2FAB6FBFD18A /* Pods-Practical_Unlimit.debug.xcconfig */,
 				F638C2214CE22BB22A87488B /* Pods-Practical_Unlimit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,6 +165,7 @@
 			children = (
 				E60BA1B92AC7E6CC002335E4 /* API Call */,
 				E60BA1D62AC7E706002335E4 /* Constants */,
+				E6DB239C2AC81E1F003547C7 /* DB Manager */,
 				E60BA1C12AC7E6DA002335E4 /* Extensions */,
 				E60BA1DB2AC7EB21002335E4 /* Plist File */,
 				E60BA1C82AC7E6DA002335E4 /* Reachability */,
@@ -331,12 +335,12 @@
 		E69663012AC7E53C000E3AC4 = {
 			isa = PBXGroup;
 			children = (
+				D09EE6E8937C8BF50B71AB57 /* Frameworks */,
+				B5EF39AC0127647A00569317 /* Pods */,
 				E696630C2AC7E53C000E3AC4 /* Practical_Unlimit */,
 				E69663232AC7E543000E3AC4 /* Practical_UnlimitTests */,
 				E696632D2AC7E543000E3AC4 /* Practical_UnlimitUITests */,
 				E696630B2AC7E53C000E3AC4 /* Products */,
-				B5EF39AC0127647A00569317 /* Pods */,
-				D09EE6E8937C8BF50B71AB57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,6 +381,15 @@
 				E69663302AC7E543000E3AC4 /* Practical_UnlimitUITestsLaunchTests.swift */,
 			);
 			path = Practical_UnlimitUITests;
+			sourceTree = "<group>";
+		};
+		E6DB239C2AC81E1F003547C7 /* DB Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E6DB23A12AC82113003547C7 /* JokesDB.sqlite */,
+				E6DB23A32AC82291003547C7 /* JokesDBManager.swift */,
+			);
+			path = "DB Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DB23A22AC82113003547C7 /* JokesDB.sqlite in Resources */,
 				E696631A2AC7E542000E3AC4 /* LaunchScreen.storyboard in Resources */,
 				E60BA1B42AC7E6A2002335E4 /* Inter-ExtraBold.ttf in Resources */,
 				E60BA1AF2AC7E6A2002335E4 /* Inter-Medium.ttf in Resources */,
@@ -572,6 +586,7 @@
 				E60BA1CF2AC7E6DA002335E4 /* UIView+Extension.swift in Sources */,
 				E696630E2AC7E53C000E3AC4 /* AppDelegate.swift in Sources */,
 				E60BA1E22AC7ED03002335E4 /* JokesVC.swift in Sources */,
+				E6DB23A42AC82291003547C7 /* JokesDBManager.swift in Sources */,
 				E60BA1D12AC7E6DA002335E4 /* AppDelegate+Configuration.swift in Sources */,
 				E60BA1D42AC7E6DA002335E4 /* JailbreakDetector.swift in Sources */,
 				E60BA1D22AC7E6DA002335E4 /* UITextField+Extension.swift in Sources */,
@@ -757,6 +772,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Practical_Unlimit/Common/Plist File/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Practical Unlimit";
@@ -792,6 +808,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Practical_Unlimit/Common/Plist File/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Practical Unlimit";

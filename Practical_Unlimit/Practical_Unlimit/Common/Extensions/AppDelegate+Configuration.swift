@@ -8,6 +8,8 @@ extension AppDelegate {
     //MARK: - Config App Method
     func configApp() {
 
+        Utility().copyFile(fileName: "JokesDB.sqlite")
+
         setRootController()
     }
 

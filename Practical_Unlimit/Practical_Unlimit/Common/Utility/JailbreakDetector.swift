@@ -2,9 +2,9 @@
 //  JailbreakDetector.swift
 //
 
-import Foundation
 import UIKit
 
+//MARK: - JailbreakDetector Class
 public class JailbreakDetector {
 
     public var isJailbreakDetected: Bool {

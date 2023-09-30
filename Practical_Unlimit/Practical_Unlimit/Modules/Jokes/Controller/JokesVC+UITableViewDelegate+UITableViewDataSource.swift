@@ -18,7 +18,7 @@ extension JokesVC : UITableViewDelegate, UITableViewDataSource {
 
         cell.lblJoke.text = arrJokesList[indexPath.row].joke ?? ""
 
-        cell.lblDate.text = Utility().datetimeFormatter(strFormat: DateAndTimeFormatString.strDateFormat_MMMddYYYYhhmmssa, isTimeZoneUTC: false).string(from: arrJokesList[indexPath.row].date ?? Date())
+        cell.lblDate.text = arrJokesList[indexPath.row].date ?? ""
 
         return cell
     }

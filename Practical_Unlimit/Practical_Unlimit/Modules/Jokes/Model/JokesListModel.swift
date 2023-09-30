@@ -3,12 +3,10 @@
 //  Practical_Unlimit
 //
 
-import Foundation
-
 struct JokesList : Codable {
 
     var joke : String?
-    var date : Date?
+    var date : String?
 
     enum CodingKeys: String, CodingKey {
 
@@ -23,7 +21,7 @@ struct JokesList : Codable {
         try container.encode(date, forKey: .date)
     }
 
-    init(joke : String, date : Date) {
+    init(joke : String, date : String) {
 
         self.joke = joke
         self.date = date

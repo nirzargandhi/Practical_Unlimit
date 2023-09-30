@@ -17,15 +17,18 @@ class JokesVC: UIViewController {
     var arrJokesList = [JokesList]()
     weak var timer: Timer?
 
+    //MARK: - ViewController Method
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initialization()
 
+        fetchJokesFromDatabase()
+
         callJokeAPI()
     }
 
-    //MARK: - initialization Method
+    //MARK: - Initialization Method
     private func initialization() {
 
         hideNavigationBar(isTabbar: false)
@@ -38,6 +41,16 @@ class JokesVC: UIViewController {
         tblJokesList.rowHeight = UITableView.automaticDimension
         tblJokesList.estimatedRowHeight = UITableView.automaticDimension
         tblJokesList.tableFooterView = UIView()
+    }
+
+    //MARK: - Fetch Jokes From Database Method
+    private func fetchJokesFromDatabase() {
+
+        arrJokesList = JokesDBManager.getInstance().getAllJokesData()
+
+        arrJokesList = arrJokesList.sorted(by: {$0.date ?? "" > $1.date ?? ""})
+
+        setupUI()
     }
 
     //MARK: - Call Joke API Method
@@ -75,16 +88,46 @@ class JokesVC: UIViewController {
     //MARK: - Set Jokes Data Method
     private func setData(dictResponseData : JokesList) {
 
-        let dictJokes = JokesList(joke: dictResponseData.joke ?? "", date: Date())
+        let strDate = Utility().datetimeFormatter(strFormat: DateAndTimeFormatString.strDateFormat_MMMddYYYYhhmmssa, isTimeZoneUTC: false).string(from: Date())
+        let dictJoke = JokesList(joke: dictResponseData.joke ?? "", date: strDate)
 
         if arrJokesList.count == 10 {
+
+            deleteJokeFromDatabase(joke: JokesList(joke: arrJokesList.last?.joke ?? "", date: arrJokesList.last?.date ?? ""))
+
             arrJokesList.removeLast()
         }
 
-        arrJokesList.append(dictJokes)
-        arrJokesList = arrJokesList.sorted(by: {$0.date ?? Date() > $1.date ?? Date()})
+        arrJokesList.append(dictJoke)
+        arrJokesList = arrJokesList.sorted(by: {$0.date ?? "" > $1.date ?? ""})
+
+        insertJokeToDatabase(joke: dictJoke)
 
         setupUI()
+    }
+
+    //MARK: - Insert Joke To Database Method
+    private func insertJokeToDatabase(joke : JokesList) {
+
+        let isDataInserted = JokesDBManager.getInstance().addJokesData(objJokesList: joke)
+
+        if isDataInserted {
+            print("Data insert successfully")
+        } else {
+            print("Data insert unsuccessfully")
+        }
+    }
+
+    //MARK: - Delete Joke From Database Method
+    private func deleteJokeFromDatabase(joke : JokesList) {
+
+        let isDataInserted = JokesDBManager.getInstance().deleteJokesData(objJokesList: joke)
+
+        if isDataInserted {
+            print("Data delete successfully")
+        } else {
+            print("Data delete unsuccessfully")
+        }
     }
 
     //MARK: - Setup UI Method
@@ -103,7 +146,7 @@ class JokesVC: UIViewController {
 
     //MARK: - Start & End Timer Methods
     private func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(callAPI), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(callAPI), userInfo: nil, repeats: false)
     }
 
     private func endTimer() {

@@ -1,6 +1,5 @@
 //
 //  JokesVC+Presenters.swift
-//  Practical_Unlimit
 //
 
 import Foundation

@@ -1,6 +1,5 @@
 //
 //  JokesListModel.swift
-//  Practical_Unlimit
 //
 
 struct JokesList : Codable {

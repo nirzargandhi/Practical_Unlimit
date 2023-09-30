@@ -26,14 +26,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sl-io-eYF">
-                                <rect key="frame" x="125" y="311.5" width="125" height="44"/>
-                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="36"/>
+                                <rect key="frame" x="101" y="303" width="173.5" height="61"/>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="50"/>
                                 <color key="textColor" name="AppRed"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practical Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-AW-Sv0">
-                                <rect key="frame" x="142.5" y="355.5" width="90" height="17"/>
-                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <rect key="frame" x="123.5" y="364" width="128.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 <color key="textColor" name="AppPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>

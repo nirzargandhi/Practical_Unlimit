@@ -1,6 +1,5 @@
 //
 //  JokesVC.swift
-//  Practical_Unlimit
 //
 
 import UIKit

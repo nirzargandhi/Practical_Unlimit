@@ -22,12 +22,10 @@
 		E60BA1BE2AC7E6CC002335E4 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1BA2AC7E6CC002335E4 /* ServiceRequest.swift */; };
 		E60BA1BF2AC7E6CC002335E4 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1BB2AC7E6CC002335E4 /* ApiCall.swift */; };
 		E60BA1C02AC7E6CC002335E4 /* GeneralResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1BD2AC7E6CC002335E4 /* GeneralResponseModel.swift */; };
-		E60BA1CD2AC7E6DA002335E4 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C22AC7E6DA002335E4 /* UIImageView+Extension.swift */; };
 		E60BA1CE2AC7E6DA002335E4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C32AC7E6DA002335E4 /* UIColor+Extension.swift */; };
 		E60BA1CF2AC7E6DA002335E4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C42AC7E6DA002335E4 /* UIView+Extension.swift */; };
 		E60BA1D02AC7E6DA002335E4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C52AC7E6DA002335E4 /* UIViewController+Extension.swift */; };
 		E60BA1D12AC7E6DA002335E4 /* AppDelegate+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C62AC7E6DA002335E4 /* AppDelegate+Configuration.swift */; };
-		E60BA1D22AC7E6DA002335E4 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C72AC7E6DA002335E4 /* UITextField+Extension.swift */; };
 		E60BA1D32AC7E6DA002335E4 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1C92AC7E6DA002335E4 /* ConnectionCheck.swift */; };
 		E60BA1D42AC7E6DA002335E4 /* JailbreakDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1CB2AC7E6DA002335E4 /* JailbreakDetector.swift */; };
 		E60BA1D52AC7E6DA002335E4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BA1CC2AC7E6DA002335E4 /* Utility.swift */; };
@@ -82,12 +80,10 @@
 		E60BA1BA2AC7E6CC002335E4 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
 		E60BA1BB2AC7E6CC002335E4 /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		E60BA1BD2AC7E6CC002335E4 /* GeneralResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralResponseModel.swift; sourceTree = "<group>"; };
-		E60BA1C22AC7E6DA002335E4 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		E60BA1C32AC7E6DA002335E4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E60BA1C42AC7E6DA002335E4 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E60BA1C52AC7E6DA002335E4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E60BA1C62AC7E6DA002335E4 /* AppDelegate+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Configuration.swift"; sourceTree = "<group>"; };
-		E60BA1C72AC7E6DA002335E4 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E60BA1C92AC7E6DA002335E4 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 		E60BA1CB2AC7E6DA002335E4 /* JailbreakDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailbreakDetector.swift; sourceTree = "<group>"; };
 		E60BA1CC2AC7E6DA002335E4 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -252,8 +248,6 @@
 			children = (
 				E60BA1C62AC7E6DA002335E4 /* AppDelegate+Configuration.swift */,
 				E60BA1C32AC7E6DA002335E4 /* UIColor+Extension.swift */,
-				E60BA1C22AC7E6DA002335E4 /* UIImageView+Extension.swift */,
-				E60BA1C72AC7E6DA002335E4 /* UITextField+Extension.swift */,
 				E60BA1C42AC7E6DA002335E4 /* UIView+Extension.swift */,
 				E60BA1C52AC7E6DA002335E4 /* UIViewController+Extension.swift */,
 			);
@@ -593,7 +587,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60BA1D02AC7E6DA002335E4 /* UIViewController+Extension.swift in Sources */,
-				E60BA1CD2AC7E6DA002335E4 /* UIImageView+Extension.swift in Sources */,
 				E6E837FA2AC86877008FFF3B /* JokesVC+Presenters.swift in Sources */,
 				E6560D6B2AC7F13200204935 /* JokesTVC.swift in Sources */,
 				E64430A92AC7FD9500C0F73B /* JokesVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */,
@@ -604,7 +597,6 @@
 				E6DB23A42AC82291003547C7 /* JokesDBManager.swift in Sources */,
 				E60BA1D12AC7E6DA002335E4 /* AppDelegate+Configuration.swift in Sources */,
 				E60BA1D42AC7E6DA002335E4 /* JailbreakDetector.swift in Sources */,
-				E60BA1D22AC7E6DA002335E4 /* UITextField+Extension.swift in Sources */,
 				E60BA1D52AC7E6DA002335E4 /* Utility.swift in Sources */,
 				E60BA1BF2AC7E6CC002335E4 /* ApiCall.swift in Sources */,
 				E60BA1CE2AC7E6DA002335E4 /* UIColor+Extension.swift in Sources */,
@@ -795,8 +787,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -831,8 +822,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

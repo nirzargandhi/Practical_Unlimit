@@ -1,6 +1,5 @@
 //
 //  JokesVC+UITableViewDelegate+UITableViewDataSource.swift
-//  Practical_Unlimit
 //
 
 import UIKit

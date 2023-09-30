@@ -1,6 +1,5 @@
 //
 //  JokesVC+JokesPresentersDelegate.swift
-//  Practical_Unlimit
 //
 
 //MARK: - JokesPresentersDelegate Extension

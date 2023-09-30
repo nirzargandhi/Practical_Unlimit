@@ -1,6 +1,5 @@
 //
 //  JokesDBManager.swift
-//  Practical_Unlimit
 //
 
 import FMDB
